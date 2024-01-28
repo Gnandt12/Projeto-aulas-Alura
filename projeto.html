@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon"  src="favicon.ico">
+    <title>Encriptador DG</title>
+    <link rel="stylesheet" href="projeto.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <logo><img src="OIP.jpeg" class="logo"></logo>
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Digite Seu Texto Aqui"
+        ></textarea>
+
+        <div class="mensagemdeatencao">
+          <p>Somente Letras Minúsculas e Sem Acentos.</p>
+        </div>
+        <div class="botoes">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input
+            type="button"
+            class="btn-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="procurandotexto.jpeg" alt="" id="procurandotexto" />
+        <div class="mensagem-encriptado" id="mensagem-encriptado">
+          <h2 id="titulo-mensagem">Nenhuma Mensagem Foi Encontrada</h2>
+          <p id="paragrafo">
+            Digite o texto que deseja encriptar ou desencriptar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="projeto.js"></script>
+</html>
+
+
+
